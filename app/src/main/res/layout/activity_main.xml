@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2e2e2e"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#696969"
+        android:textSize="30sp"
+        android:padding="5sp"
+        android:text="Sistema de Compras" />
+
+    <TextView
+        android:id="@+id/textSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="Escolha o seu produto: " />
+
+    <CheckBox
+        android:id="@+id/checkArroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Arroz 1 Kg (R$ 2,69)" />
+
+    <CheckBox
+        android:id="@+id/checkLeite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Leite longa vida (R$ 2,70)" />
+
+    <CheckBox
+        android:id="@+id/checkCarne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Carne Friboi (R$ 16,70)" />
+
+    <CheckBox
+        android:id="@+id/checkFeijao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Feijão carioquinha 1 Kg (R$ 3,38)" />
+
+    <CheckBox
+        android:id="@+id/checkRefrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Refrigerante coca-cola 2 litros (R$3,00)" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="@drawable/btn_format"
+        android:text="Total da compra" />
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:padding="5sp"
+        android:text="Total da compra: " />
+</LinearLayout>
