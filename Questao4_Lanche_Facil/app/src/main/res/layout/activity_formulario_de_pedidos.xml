@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:background="#F9F4E6"
+    android:orientation="vertical"
     android:padding="5sp"
-    tools:context=".FormularioDePedidos" >
+    tools:context=".FormularioDePedidos">
 
     <TextView
         android:id="@+id/textTitulo"
@@ -51,6 +51,7 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/layerLanche1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -109,6 +110,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layerLanche2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -167,6 +169,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layerLanche3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -226,6 +229,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layerLanche4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -288,11 +292,11 @@
     <Button
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_weight="1"
+        android:backgroundTint="#F38B0E"
         android:text="Confirmar"
         android:textSize="24sp"
-        android:backgroundTint="#F38B0E"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
