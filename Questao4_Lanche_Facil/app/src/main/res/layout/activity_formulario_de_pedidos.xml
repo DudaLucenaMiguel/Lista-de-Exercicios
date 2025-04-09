@@ -4,6 +4,295 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    tools:context=".FormularioDePedidos"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F4E6"
+    android:padding="5sp"
+    tools:context=".FormularioDePedidos" >
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faça seu pedido"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubtituloNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu nome:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textSubtituloCardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cardápio"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha seu lanche:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLanche1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/lanche_1" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNomeLanche1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-Burguer"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescricaoLanche1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição: O clássico dos clássicos! Pão macio, hambúrguer suculento e muito queijo derretido.\nIngredientes: Pão brioche, hambúrguer bovino 120g, queijo mussarela, maionese da casa."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textPrecoLanche1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$19,99"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetLanche1"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#F38B0E"
+            android:text="pedir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLanche2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/lanche_2" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNomeLanche2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-Frango"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescricaoLanche2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição: Leve, crocante e delicioso. Ideal para quem ama frango com aquele sabor especial.
+                    \nIngredientes: Pão brioche, filé de frango empanado, queijo cheddar, alface, tomate, maionese temperada."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textPrecoLanche2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$19,99"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetLanche2"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#F38B0E"
+            android:text="pedir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLanche3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/lanche_3" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNomeLanche3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-Bacon"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescricaoLanche3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição:Para os fãs de bacon: mais sabor, mais suculência, mais felicidade em cada mordida.
+                    \nIngredientes:Pão de hambúrguer, hambúrguer bovino 150g, queijo cheddar, bacon crocante, maionese artesanal."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textPrecoLanche3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$19,99"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetLanche3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#F38B0E"
+            android:text="pedir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLanche4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/lanche_4" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNomeLanche4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-Salada"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescricaoLanche4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição: Uma explosão de frescor e sabor com os ingredientes mais leves do cardápio.
+                \nIngredientes: Pão integral, hambúrguer bovino ou vegetal (opcional), alface, tomate, cebola roxa, queijo branco, maionese light."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textPrecoLanche4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$19,99"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetLanche4"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#F38B0E"
+            android:text="pedir" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Confirmar"
+        android:textSize="24sp"
+        android:backgroundTint="#F38B0E"
+        android:textStyle="bold"/>
+
+</LinearLayout>
