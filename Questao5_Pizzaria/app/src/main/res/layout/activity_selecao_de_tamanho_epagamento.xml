@@ -20,23 +20,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/rbPequena"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pequena (20cm)" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/rbMedia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Média (25cm)" />
+            <RadioButton
+                android:id="@+id/rbPequena"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Pequena (20cm)" />
 
-        <RadioButton
-            android:id="@+id/rbGrande"
+            <TextView
+                android:id="@+id/textPrecoPequena"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R$ 00,00" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Grande (35cm)" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMedia"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Média (25cm)" />
+
+            <TextView
+                android:id="@+id/textPrecoMedia"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R$ 00,00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbGrande"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Grande (35cm)" />
+
+            <TextView
+                android:id="@+id/textPrecoGrande"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R$ 00,00" />
+        </LinearLayout>
+
     </RadioGroup>
 
     <TextView
