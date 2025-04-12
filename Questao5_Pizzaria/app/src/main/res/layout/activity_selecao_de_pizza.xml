@@ -6,16 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/mozzarellaWhite"
     tools:context=".SelecaoDePizza">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/crustBeige"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Escolha o sabor"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:background="@color/basilGreen"
+        android:text="Selecione o sabor de sua pizza:"
+        android:textColor="@color/mozzarellaWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,23 +109,31 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resumo:" />
+            android:background="@color/basilGreen"
+            android:text="Sabor escolhido:"
+            android:textColor="@color/mozzarellaWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp" />
 
         <TextView
             android:id="@+id/textResumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="10sp"
-            android:paddingVertical="5sp"
+
             android:text=""
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5sp"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/redTomato"
+        android:text="Prosseguir"
         android:layout_marginHorizontal="10sp"
-        android:text="Escolher o tamanho" />
+        android:textSize="20sp" />
 </LinearLayout>
