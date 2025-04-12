@@ -1,4 +1,9 @@
 # 📚 Lista de Exercícios Android
+<br>Nome: Duda Lucena Miguel
+<br>RA: 24025889
+<br>Turma: 3NACCOMP
+<br>Disciplina: Programação para Dispositivos Móveis
+<br>Docente: Prof. Vinicius Heltai Pacheco
 
 ---
 
