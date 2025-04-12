@@ -29,36 +29,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="5">
 
             <RadioButton
                 android:id="@+id/rbPequena"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:text="Pequena (20cm)" />
+                android:text="Pequena (20cm)"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/rbMedia"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:buttonTint="@color/basilGreen"
-                android:text="Média (25cm)" />
+                android:text="Média (25cm)"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/rbGrande"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:buttonTint="@color/basilGreen"
-                android:text="Grande (35cm)" />
+                android:text="Grande (35cm)"
+                android:textSize="20sp" />
 
         </RadioGroup>
 
@@ -73,18 +77,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="R$ 00,00"
                 android:gravity="center"
-                android:textAlignment="center" />
+                android:text="R$ 00,00"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textPrecoMedia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="R$ 00,00"
                 android:gravity="center"
-                android:textAlignment="center" />
+                android:text="R$ 00,00"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textPrecoGrande"
@@ -94,7 +100,8 @@
                 android:gravity="center"
                 android:text="R$ 00,00"
 
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -112,39 +119,48 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <RadioButton
             android:id="@+id/rbDebito"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Débito" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Débito"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbCredito"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Crédito" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Crédito"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbPix"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pix" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Pix"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbDinheiro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dinheiro" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dinheiro"
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15sp"
         android:backgroundTint="@color/redTomato"
         android:text="Finalizar Pedido"
-        android:layout_marginHorizontal="10sp"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 </LinearLayout>

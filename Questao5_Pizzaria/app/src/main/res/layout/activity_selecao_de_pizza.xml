@@ -30,12 +30,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
@@ -51,7 +54,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:text="Calabresa" />
+                android:text="Calabresa"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -59,6 +63,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
@@ -74,12 +80,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:text="Portuguesa" />
+                android:text="Portuguesa"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+
             android:orientation="horizontal">
 
             <ImageView
@@ -95,45 +105,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:text="Frango com Catupiry" />
+                android:text="Frango com Catupiry"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/basilGreen"
+        android:paddingHorizontal="5sp"
+        android:text="Sabor escolhido:"
+        android:textColor="@color/mozzarellaWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/basilGreen"
-            android:text="Sabor escolhido:"
-            android:textColor="@color/mozzarellaWhite"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:paddingHorizontal="5sp" />
-
-        <TextView
-            android:id="@+id/textResumo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text=""
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:padding="5sp"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textResumo"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15sp"
         android:backgroundTint="@color/redTomato"
         android:text="Prosseguir"
-        android:layout_marginHorizontal="10sp"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 </LinearLayout>

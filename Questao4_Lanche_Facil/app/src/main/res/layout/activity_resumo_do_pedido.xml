@@ -23,93 +23,101 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="10sp"
-        android:paddingHorizontal="15sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:paddingHorizontal="15sp"
+            android:paddingVertical="10sp">
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="olá "
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textNome"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fulano,"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="olá "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fulano,"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="seu pedido foi concluido com sucesso!!!"
+                android:textSize="20sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView8"
+        <ImageView
+            android:id="@+id/imgConfirmacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="seu pedido foi concluido com sucesso!!!"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imgConfirmacao"
-        android:layout_width="match_parent"
-        android:layout_height="415dp"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/confirmacao_pedido" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="15sp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resumo do Pedido:"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textNomeDoLanche"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingVertical="5sp"
-            android:text="- 1x X-Sei lá"
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/confirmacao_pedido" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:paddingHorizontal="15sp">
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Total: "
-                android:textSize="24sp"
+                android:text="Resumo do Pedido:"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textTotal"
-                android:layout_width="wrap_content"
+                android:id="@+id/textNomeDoLanche"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:text="R$ 00,00"
-                android:textSize="24sp" />
+                android:paddingVertical="5sp"
+                android:text="- 1x X-Sei lá"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total: "
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="R$ 00,00"
+                    android:textSize="24sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
