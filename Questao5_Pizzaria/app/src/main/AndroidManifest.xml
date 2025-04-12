@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Questao5Pizzaria"
         tools:targetApi="31" >
         <activity
-            android:name=".ResumoDoPodedio"
+            android:name=".ResumoDoPedido"
             android:exported="false" />
         <activity
             android:name=".SelecaoDeTamanhoEPagamento"
             android:exported="false" />
         <activity
-            android:name=".SelecaoDePizza"
+            android:name=".SelecaoDoSabor"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

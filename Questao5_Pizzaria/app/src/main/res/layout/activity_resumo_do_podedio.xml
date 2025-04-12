@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/mozzarellaWhite"
     android:orientation="vertical"
-    tools:context=".ResumoDoPodedio">
+    tools:context=".ResumoDoPedido">
 
     <TextView
         android:id="@+id/textView5"

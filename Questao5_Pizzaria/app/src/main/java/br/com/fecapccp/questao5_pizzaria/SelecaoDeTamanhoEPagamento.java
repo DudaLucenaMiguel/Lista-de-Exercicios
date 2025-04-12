@@ -59,7 +59,7 @@ public class SelecaoDeTamanhoEPagamento extends AppCompatActivity {
 
         btnSet.setOnClickListener(view -> {
             ChecarOpcoes();
-            Intent intent = new Intent(this, ResumoDoPodedio.class);
+            Intent intent = new Intent(this, ResumoDoPedido.class);
 
             intent.putExtra("tamanhoEscolhido", tamanhoEscolhido);
             intent.putExtra("formaDePagamento", formaDePagamento);

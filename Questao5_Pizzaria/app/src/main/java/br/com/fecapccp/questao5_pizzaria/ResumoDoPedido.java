@@ -15,7 +15,7 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
-public class ResumoDoPodedio extends AppCompatActivity {
+public class ResumoDoPedido extends AppCompatActivity {
 
     private TextView textTamanho, textSabor, textFormaDePagamento, textValor;
     private String tamanhoEscolhido, saborEscolhido, formaDePagamento;
@@ -56,7 +56,7 @@ public class ResumoDoPodedio extends AppCompatActivity {
         textValor.setText("R$ " + decimalFormat.format(valorTotal));
 
         btnSet.setOnClickListener(view ->{
-            Intent intent = new Intent(this, SelecaoDePizza.class);
+            Intent intent = new Intent(this, SelecaoDoSabor.class);
             startActivity(intent);
             finish();
         });

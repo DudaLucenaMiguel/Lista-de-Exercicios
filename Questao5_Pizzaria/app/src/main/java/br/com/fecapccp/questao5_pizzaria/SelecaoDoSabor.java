@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SelecaoDePizza extends AppCompatActivity {
+public class SelecaoDoSabor extends AppCompatActivity {
 
     private CheckBox cbCalabresa, cbFrancoComCatupiry, cbPortuguesa;
     private Button btnSet;
